@@ -13,7 +13,7 @@ body {
 }
 
 .movie {
-  max-width: 300px;
+  max-width: 250px;
   height: 100%;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s; 
@@ -172,4 +172,52 @@ body {
   100% {
     box-shadow: 0 0 40px rgba(255, 215, 0, 1);
   }
+}
+
+
+.movie-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Taşan içerikleri gizler */
+}
+
+.trailer {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8); /* Hafif siyah arka plan */
+  z-index: 10; /* Diğer içeriklerden önde olması için */
+}
+
+.movie-wrapper:hover .trailer {
+  display: block;
+}
+
+.movie {
+  width: 200%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.movie-wrapper:hover .movie {
+  transform: scale(2.1); /* Hover sırasında görüntü büyüme efekti */
+}
+
+
+.rating {
+   margin-top: 18px;
+  bottom: 10px;
+  transform: translateY(-20%); /* Tam ortalama için sola kaydırın. */
+  color: #fff;
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex; /* Flexbox kullanımı */
+  justify-content: center; /* İçerikleri yatay ortala */
+  align-items: center; /* İçerikleri dikey olarak ortala */
 }
