@@ -4,7 +4,7 @@
 Bu proje, kullanıcıların film içeriklerini görüntüleyebildiği, bilgi edinebildiği ve favori filmlerini kaydedebileceği bir uygulama geliştirmek için oluşturulmuştur. Kullanıcılar, filmler arasında gezinebilir, arama yapabilir ve film detaylarını görüntüleyebilirler. Uygulama React Router ile yönlendirme işlemlerini gerçekleştirmektedir.
 
 ## 📸 Ekran Görüntüleri
-![Sunum](URL_TO_YOUR_IMAGE) 
+![n.gif](https://github.com/Fiartaks/42-React-Redux-Netflix/blob/main/netflix/public/n.gif) 
 
 ## 💻 Projede Neler Var?
 - 🏠 **Ana Sayfa:** Popüler filmlerin görüntülendiği ana sayfa.
